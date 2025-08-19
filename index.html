@@ -1,23 +1,61 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Profile</title>
 <style type="text/css">
-<!--
-p { font-family : "Apple Color Emoji","Segoe UI Emoji" }
--->
+  body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 32px;
+    text-align: center;
+  }
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 2px solid #eee;
+  }
+  h1 {
+    margin: 0 0 12px 0;
+    font-size: 2em;
+  }
+  p {
+    color: #555;
+    margin-bottom: 24px;
+  }
+  .links a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+  }
 </style>
-<title>JavaScript Sample</title>
-<script type="text/javascript" src="emoji.js">
-</script>
 </head>
 <body>
-<p>
-Hello Emoji☀☔
-
-<p>
-<form name="test">
-<input type="button" value="変換" onClick="toimage(document);">
-</form>
-</p>
+  <div class="container">
+    <img src="https://pbs.twimg.com/profile_images/1572795860542697473/IieFkpXj_400x400.jpg" alt="プロフィール画像" class="profile-img">
+    <h1>Sakamori, Satoshi</h1>
+    <p>
+      モットー： <img src="https://pbs.twimg.com/media/FUJfKu2VsAEIz7r?format=jpg&name=900x900" alt="モットー"><br>
+      好きな漫画: 究極超人あーる、ばらかもん<br>
+      好きなアニメ: このすば、残響のテロル<br>
+      好きな食べ物など： ラーメン、ナポリタン、ビール、日本酒
+    </p>
+    <div class="links">
+      <a href="https://x.com/SatoshiSakamori" target="_blank">X (Twitter)</a>
+      <a href="https://github.com/SatoshiSakamori" target="_blank">GitHub</a>
+    </div>
+  </div>
 </body>
 </html>
